@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style type="text/css">
+      .jumbotron {
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        background-color: #e9ecef;
+        border-radius: .3rem;
+        background-image: url("landscape.jpg");
+        background-size: cover;
+        height: 950px;  
+
+      }
+
+      a {
+        color: silver;
+        font-weight: bold;
+        
+      }
+
+      div{
+        padding-top: auto; 
+
+      }
+
+      h1{
+        margin: 1.3em;
+
+      }
+
+      h2 {
+        border-bottom-style: solid;
+        width: 8em;
+        margin: auto;
+            
+      }
+
+      #freePlan {
+       background: #AFEEEE;
+       color: white;
+       padding: 1em;
+       font-size: auto;
+       font-weight: bold;
+       
+
+      }
+
+      #standPlan {
+        background: #5DADE2;
+        color: white;
+        padding: 1em;
+        font-size: auto;
+        font-weight: bold;
+        
+
+      }
+
+      #premPlan {
+        background: #EC7063;
+        color: white;
+        padding: 1em;
+        font-size: auto;
+        font-weight: bold;
+        
+
+      }
+
+      #priceLabel {
+        color: black;
+
+      }
+
+      #table-1 {
+        table-layout: fixed;
+        text-align: center;
+        background: #999999;
+        color: white;
+        width: 100%; 
+        max-width: auto;
+        min-width: auto;
+
+      }
+
+      #table-2 {
+        text-align: center;
+        color: black;
+        border: 0.8em solid #FFFFFF;
+        width: 80%;
+        max-width: auto;
+        min-width: auto;
+
+
+
+      }
+
+      #btn{ 
+       margin: auto;
+
+
+      }
+
+      #sign-in {
+        background-color: rgb(252,252,252);
+        color: black;
+        opacity: 0.7;
+        border: none;
+
+      }
+
+      #mock{
+        width: 100%
+      }
+
+      #pricing{
+        width: 100%
+        background-color: rgb(238 238 000);
+      }
+
+      .btn1 {
+        background-color: #4CAF50;
+      }
+
+      .block-1 {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0.5em;
+        background-color: rgb(94, 224, 98);
+        padding: 1em 1.8em;
+        font-size: 1em;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+      }
+
+      .block-2 {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0.5em;
+        background-color: rgb(48, 170, 233);
+        padding: 1em 1.8em;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+      }
+
+      .block-3 {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0.5em;
+        background-color: #EC7063;
+        padding: 1em 1.8em;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+      }
+
+      #brownRow{
+        background: rgb(242, 242, 242);
+      }
+
+      #owner{
+        width: 50em;
+
+      }
+
+       #ceo{
+        
+        border-radius: 0.3em;
+        width: 80%;
+        max-width: auto;
+        min-width: auto;
+        
+        
+
+      }
+
+      #cto{
+        
+        border-radius: 0.3em;
+        width: 80%;
+        max-width: auto;
+        min-width: auto;
+        margin: auto;
+
+
+      }
+
+      #cio{
+        
+        border-radius: 0.3em;
+        width: 80%;
+        max-width: auto;
+        min-width: auto;
+
+      }
+
+      #btnJoin{
+        background-size: 1em;
+
+      }
+
+      .container{
+        max-width: 100em;
+        margin:auto;
+        padding: auto;
+        width: 95%;
+
+      }
+
+      .row{
+        display: flex;
+
+      }
+
+      .footer{
+        background-color: #1D1B1B;
+        padding: 3em 2em 1em 3em;
+
+      }
+
+      .footer-col{
+         width: 19em;
+
+      }
+
+      .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+
+      }
+
+      .footer-col ul a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        transition: all 0.2s ease;
+        list-style-type: none;
+
+
+      }
+
+      .footer-col ul a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+
+      }
+
+      .footer-col li{
+        color: grey;
+        list-style-type: none;
+        margin-left: -2em
+
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="position-absolute">
+     <a class="nav-link active" aria-current="page" href="#">Company name</a>
+  </div>
+    <ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Features</a>
+  </li>    
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+  </li>    
+  <li class="nav-item"> 
+    <a class="nav-link active" aria-current="page" href="#">Contact</a>
+  </li>
+  </ul>
+</nav>
+</div>
+ 
+
+  <div class="jumbotron text-center text-light">
+  <div class=" p-5 rounded-lg m-3">
+  <h1>Company name</h1>
+  <p class ="">Tagline message</p>
+  <hr style="width: 20% center">
+
+ <!-- button --> 
+<div id="btn" class="container">
+  <button id="sign-in" class="btn btn-primary">Sign in</button>
+  <button id="sign-up" class="btn btn-primary">Sign up</button>
+</div>
+</div>
+</div>
+
+<!-- product -->
+
+<<div id="product" class="container">
+  <div class="row">
+      <div class="col-6">
+         <img id="ipad" src="mock_ipad.jpg" class="img-fluid">
+      </div>
+      <div class="col-6">
+      <h5>Lorem ipsum dolor sit amet</h5>
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+</div>
+</div>
+
+<br>
+
+<!--nexsus-->
+
+<div id="product" class="container">
+  <div class="row">
+      <div class="col-6 ">
+      <h5>Lorem ipsum dolor sit amet</h5>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="col-6">
+         <img id="mock" src="mock_nexus.jpg" class="img-fluid">
+      </div>
+      
+  </div>
+</div>
+
+<br>
+<br>
+
+<!--pricing-->
+
+<table id="table-1" class="table table-borderless container">
+    <tr>
+      <td>
+      </td>
+      <td><h6>Features</h6><p>Features headline message</p></td>
+    <tr>
+      <td><h6>Feature</h6></td>
+      <td><h6>Feature</h6></td>
+      <td><h6>Feature</h6></td>
+    </tr>
+    <tr>
+      <td><h6>Feature</h6></td>
+      <td><h6>Feature</h6></td>
+      <td><h6>Feature</h6></td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--Plan package-->
+
+<table id="table-2" class="table container">
+  <td>
+      </td>
+      <td><h4 id="priceLabel">Price table</h4></td>
+    </tr>
+      <th id="freePlan">Free plan</th>
+      <th id="standPlan">Standard plan</th>
+      <th id="premPlan">Premium plan</th>
+    </tr>
+    <tr>
+      <td id="freePlan">$ 0</td>
+      <td id="standPlan">$ 99</td>
+      <td id="premPlan">$ 999</td>
+    </tr>
+    <tr>
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+    </tr>
+    <tr id="brownRow">
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+    </tr>
+    <tr>
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+    </tr>
+    <tr id="brownRow">
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+    </tr>
+    <tr>
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+      <td>Lorem ipsum</td>
+    </tr>
+    <tr id="brownRow">
+      <td><button type="btn btn-primary" class="block-1">Purchase</button></td>
+      <td><button type="btn btn-primary" class="block-2">Purchase</button></td>
+      <td><button type="btn btn-primary" class="block-3">Purchase</button></td>
+    </tr>
+  </table>
+
+<br>
+<!--CEO table-->
+
+<div id="owner" class="container">
+  <div class="row">
+  <div class="col-4 text-center">
+    <img id="ceo" src="jon.png" class="rounded">
+    <h6 style="color:blue"><span>Jonny Doo</span></h6>
+    <p>CEO</p>
+  </div>
+  <div class="col-4 text-center">
+    <img id="cto" src="jon.png" class="rounded-circle">
+    <h6 style="color:blue"><span>Jonny Doo</span></h6>
+    <p>CTO</p>
+  </div>
+  <div class="col-4 text-center">
+    <img id="cio" src="jon.png" class="img-thumbnail">
+    <h6 style="color:blue"><span>Jonny Doo</span></h6>
+    <p>CIO</p>
+  </div>
+      
+  </div>
+</div>
+
+<hr>
+<br>
+<br>
+
+
+
+<!--News Letter-->
+
+<p class="text-center"><strong>Stay connected with us. Join the newsletter to receive fresh info.</strong></p>
+<br>
+<br>
+
+<form class="form-inline text-center">
+    <input type="name" class="form-control-plaintext-sm" placeholder="Your name">
+    <input type="e-mail" class="form-control-plaintext-sm" placeholder="Your e-mail"> 
+  <button class="btn btn-primary">Join now!</button>
+</form>
+
+<br>
+<br>
+
+<!--Contact-->
+
+<footer class="footer container">
+  <div class="container">
+  <div class="row">
+  <img src="logo.png" style="width:12em;height:12em;">
+  <div class="footer-col">
+  <h4>The company</h4>
+  <ul>
+    <li><a>Documentation</a></li>
+    <li><a>Packt publisher</a></li>
+    <li><a>About us</a></li>
+    <li><a>Contact</a></li>
+  </ul>
+  </div>
+  <div class="footer-col center">
+  <h4>Social</h4>
+  <ul>
+    <li><a>Facebook</a></li>
+    <li><a>Twitter</a></li>
+    <li><a>Blog</a></li>
+  </ul>
+  </div>
+  <div class="footer-col center">
+  <h4>Support</h4>
+  <ul>
+    <li><a>Contact</a></li>
+    <li><a>Privacy police</a></li>
+    <li><a>Terms & conditions</a></li>
+    <li><a>Help desk</a></li>
+  </ul>
+  </div>
+  <div class="footer-col center">
+  <h4>Name, Inc.</h4>
+    <li><a>Address line 1</a></li>
+    <li><a>Address line 2</a></li>
+    <li><a>P:(123)456-7890</a></li>
+  </div>
+</div>
+</div>
+  </footer>
+
+  <br>
+  <br>
+  <br>
+
+
+
+ 
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
