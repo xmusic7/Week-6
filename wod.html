@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+</body>
+</html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  width: 600px;
+  padding: 3px;
+
+}
+
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  padding: 60px 60px 60px 0;
+  display: inline-block;
+
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 0px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+        
+}
+
+#btn {
+  color: #000;
+  size: auto;
+  background-color: #0069D9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[id=add] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Add New WOD</h2>
+
+<div id="container"class="container">
+<form action="#">
+<div class="row">
+<label><strong>Question</strong></label>
+<input type="text" placeholder="test">
+<div class="row">
+<label for="lvl"><strong>Difficulty</strong></label>
+<select id="difficulty" name="Difficulty">
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option>
+</select>
+</div>
+<div class="row">
+<label for="assigned"><strong>Assigned To</strong></label>
+<input type="text">
+</div>
+</form>
+</div>
+ <button onclick="assignTask()" id="btn">Add</button>
+</div>
+
+<div class="container">
+ 
+<table class="table" style="text-align: center;">
+  <thead>
+    <tr>
+      
+      <th>WOD</th>
+      <th>Assignee</th>
+      <th>Difficulty</th>
+      <th>Details</th>
+      <th>Status</th>
+      
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+    
+  </tbody>
+</table>
+</div>
+
+<br>
+<hr>
+
+
+
+</body>
+</html>
